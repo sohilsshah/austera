@@ -1,0 +1,4 @@
+<svg id="features-icon" xmlns="http://www.w3.org/2000/svg" width="75.334" height="71.333" viewBox="0 0 75.334 71.333">
+    <path fill="none" stroke="currentColor" stroke-width="2.788" stroke-miterlimit="10" d="M72.667 40.498c0 1.533-1.254 2.788-2.788 2.788H5.454c-1.533 0-2.788-1.254-2.788-2.788V5.344c0-1.533 1.254-2.788 2.788-2.788H69.88c1.533 0 2.788 1.254 2.788 2.788v35.154z" />
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="currentColor" stroke-width="2.788" stroke-miterlimit="10" d="M2.667 47.467h70M37.667 48.053v16.45M37.25 47.636L15.24 69.642M37.667 47.636l22.008 22.006M2.667 35.698h10.196l11.353-11.355 7.112 7.112 16.057-16.057 10.13 10.128 5.777-5.777h9.375" />
+</svg>

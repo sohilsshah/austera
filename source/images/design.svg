@@ -1,0 +1,12 @@
+<svg id="design-icon" xmlns="http://www.w3.org/2000/svg" width="75.334" height="71.333" viewBox="0 0 75.334 71.333">
+    <path fill="none" stroke="currentColor" stroke-width="2.852" stroke-miterlimit="10" d="M72.287 66.24c0 1.57-1.284 2.853-2.852 2.853H6.445c-1.57 0-2.852-1.284-2.852-2.852V6.028c0-1.57 1.284-2.852 2.852-2.852h62.99c1.568 0 2.85 1.284 2.85 2.852V66.24z" />
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="currentColor" stroke-width="2.852" stroke-miterlimit="10" d="M3.87 17.12h68.417" />
+    <circle fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="currentColor" stroke-width="1.901" stroke-miterlimit="10" cx="12.019" cy="10.306" r="2.944" />
+    <circle fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="currentColor" stroke-width="1.901" stroke-miterlimit="10" cx="21.811" cy="10.306" r="2.945" />
+    <circle fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="currentColor" stroke-width="1.901" stroke-miterlimit="10" cx="31.601" cy="10.306" r="2.945" />
+    <ellipse fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="currentColor" stroke-width="1.901" stroke-miterlimit="10" cx="62.513" cy="42.122" rx="2.865" ry="2.911" />
+    <ellipse fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="currentColor" stroke-width="1.901" stroke-miterlimit="10" cx="62.513" cy="60.695" rx="2.865" ry="2.911" />
+    <ellipse transform="rotate(6.486 62.5 51.43)" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="currentColor" stroke-width="1.901" stroke-miterlimit="10" cx="62.513" cy="51.425" rx="2.865" ry="2.911" />
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="currentColor" stroke-width="2.852" stroke-miterlimit="10" d="M3.593 33.916H72.8M52.994 33.916V69.41" />
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="currentColor" stroke-width="1.901" stroke-miterlimit="10" d="M12.97 42.156h30.675M12.97 25.994h50.64M12.97 51.425h30.675M12.97 60.695h30.675" />
+</svg>

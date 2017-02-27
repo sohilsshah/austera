@@ -1,0 +1,51 @@
+﻿.theme-font-color {
+    color: var(--theme-color);
+}
+
+.theme-bg-color {
+    background-color: var(--theme-color);
+    color: #fff;
+}
+
+.theme-border-color {
+    border-color: var(--theme-color);
+}
+/*in theme hover variables*/
+.hover-theme-border {
+    &:hover {
+        border-color: var(--theme-color);
+    }
+}
+
+.hover-theme-font-color {
+    &:hover {
+        color: var(--theme-color) !important;
+    }
+}
+
+.hover-theme-bg-color {
+    &:hover {
+        background-color: var(--theme-color) !important;
+    }
+}
+/*in active variables*/
+.active {
+    .active-theme-font-color {
+        color: var(--theme-color) !important;
+    }
+}
+
+.active.theme-bg-color {
+    background-color: var(--theme-color) !important;
+}
+
+/*for svg*/
+.theme-stroke{
+    stroke: var(--theme-color) !important;
+    color: var(--theme-color) !important;
+}
+
+.theme-fill{
+    fill: var(--theme-color) !important;
+    color: var(--theme-color) !important;
+}

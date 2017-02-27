@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "austera-font";
+  src:url("fonts/austera-font.eot");
+  src:url("fonts/austera-font.eot?#iefix") format("embedded-opentype"),
+    url("fonts/austera-font.woff") format("woff"),
+    url("fonts/austera-font.ttf") format("truetype"),
+    url("fonts/austera-font.svg#austera-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "austera-font" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "austera-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-design-filled:before {
+  content: "\61";
+}
+.icon-idea-filled:before {
+  content: "\62";
+}
+.icon-backpack-streamline-trekking:before {
+  content: "\63";
+}
+.icon-bag-shopping-streamline:before {
+  content: "\64";
+}
+.icon-barbecue-eat-food-streamline:before {
+  content: "\65";
+}

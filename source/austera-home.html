@@ -1,0 +1,461 @@
+﻿<!DOCTYPE html>
+<html class="color-yellow font-opensans">
+<head>
+    <title>Austera</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <link href="css/theme-main.css" rel="stylesheet" />
+    <link href="https://file.myfontastic.com/i7Dy3XeWHpePz28LG7jJ33/icons.css" rel="stylesheet">
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <!--<script src="scripts/jquery-3.1.0.min.js"></script>-->
+    <script src="scripts/browser-detect.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/image-replacement.js"></script>
+
+    <script src="scripts/banner-js/modernizr.js"></script>
+    <script src="scripts/banner-js/snap.svg-min.js"></script>
+    <script src="scripts/banner-js/main.js"></script>
+
+    <script src="scripts/scrollme/jquery.scrollme.js"></script>
+
+
+    <style>
+        svg *
+        {
+            fill: none;
+        }
+
+
+        #polaroid
+        {
+            margin: 0 auto;
+            width: 400px;
+            height: 320px;
+            stroke: #f9f9f9;
+            stroke-width: 3;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-miterlimit: 10;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <section class="menu">
+        <nav class="navbar navbar-fixed-top">
+            <div class="header-search">
+                <input type="text" placeholder="Type and hit enter to search..." />
+                <div class="close-search">
+                    <i class="fa fa-close"></i>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="search-icon pull-right visible-xs-inline">
+                        <i class="fa fa-search white-font"></i>
+                    </div>
+                    <a class="navbar-brand" href="#">Austera<sup><i class="fa fa-circle-o theme-font-color font-12"></i></sup></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Homepage</a></li>
+                        <li class="active"><a href="#about">Servies</a></li>
+                        <li><a href="#contact">About Us</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li class="search-icon hidden-xs"><a><i class="fa fa-search white-font"></i></a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+    </section>
+
+    <section class="banner">
+        <section class="cd-slider-wrapper">
+            <ul class="cd-slider">
+                <li class="visible">
+                    <div>
+                        <h2 class="banner-heading"><span class="theme-font-color">Austera</span> is simple PSD template</h2>
+                        <p class="banner-sub-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                        <a href="#" class="btn-general btn-theme banner-btn">Learn More</a>
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                        <h2>Slide #2 Title</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                        <a href="http://codyhouse.co/?p=854" class="cd-btn">Learn more</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h2>Slide #3 Title</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, distinctio!.</p>
+                        <a href="http://codyhouse.co/?p=854" class="cd-btn">Learn more</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h2>Slide #4 Title</h2>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <a href="http://codyhouse.co/?p=854" class="cd-btn">Learn more</a>
+                    </div>
+                </li>
+            </ul> <!-- .cd-slider -->
+
+            <ol class="cd-slider-navigation">
+                <li class="selected"><a href="#0"><em>Item 1</em></a></li>
+                <li><a href="#0"><em>Item 2</em></a></li>
+                <li><a href="#0"><em>Item 3</em></a></li>
+                <li><a href="#0"><em>Item 4</em></a></li>
+            </ol> <!-- .cd-slider-navigation -->
+
+            <div class="cd-svg-cover" data-step1="M1402,800h-2V0.6c0-0.3,0-0.3,0-0.6h2v294V800z" data-step2="M1400,800H383L770.7,0.6c0.2-0.3,0.5-0.6,0.9-0.6H1400v294V800z" data-step3="M1400,800H0V0.6C0,0.4,0,0.3,0,0h1400v294V800z" data-step4="M615,800H0V0.6C0,0.4,0,0.3,0,0h615L393,312L615,800z" data-step5="M0,800h-2V0.6C-2,0.4-2,0.3-2,0h2v312V800z" data-step6="M-2,800h2L0,0.6C0,0.3,0,0.3,0,0l-2,0v294V800z" data-step7="M0,800h1017L629.3,0.6c-0.2-0.3-0.5-0.6-0.9-0.6L0,0l0,294L0,800z" data-step8="M0,800h1400V0.6c0-0.2,0-0.3,0-0.6L0,0l0,294L0,800z" data-step9="M785,800h615V0.6c0-0.2,0-0.3,0-0.6L785,0l222,312L785,800z" data-step10="M1400,800h2V0.6c0-0.2,0-0.3,0-0.6l-2,0v312V800z">
+                <svg height='100%' width="100%" preserveAspectRatio="none" viewBox="0 0 1400 800">
+                    <title>SVG cover layer</title>
+                    <desc>an animated layer to switch from one slide to the next one</desc>
+                    <path id="cd-changing-path" d="M1402,800h-2V0.6c0-0.3,0-0.3,0-0.6h2v294V800z" />
+                </svg>
+            </div> <!-- .cd-svg-cover -->
+        </section> <!-- .cd-slider-wrapper -->
+
+    </section>
+
+    <section class="traingle-divider">
+        <section class="our-services section-padding">
+            <div class="container">
+                <div class="row scrollme">
+                    <div class="col-xs-12">
+                        <h2 class="heading text-center">Our services</h2>
+                        <hr class="mr-t-50" />
+
+
+
+
+
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 text-xs-center">
+                        <svg id="design-icon" xmlns="http://www.w3.org/2000/svg" width="75.334" height="71.333" viewBox="0 0 75.334 71.333" class="theme-stroke">
+                            <path fill="none" stroke="currentColor" stroke-width="2.852" stroke-miterlimit="10" d="M72.287 66.24c0 1.57-1.284 2.853-2.852 2.853H6.445c-1.57 0-2.852-1.284-2.852-2.852V6.028c0-1.57 1.284-2.852 2.852-2.852h62.99c1.568 0 2.85 1.284 2.85 2.852V66.24z" />
+                            <path clip-rule="evenodd" fill="none" stroke="currentColor" stroke-width="2.852" stroke-miterlimit="10" d="M3.87 17.12h68.417" />
+                            <circle clip-rule="evenodd" fill="none" stroke="currentColor" stroke-width="1.901" stroke-miterlimit="10" cx="12.019" cy="10.306" r="2.944" />
+                            <circle clip-rule="evenodd" fill="none" stroke="currentColor" stroke-width="1.901" stroke-miterlimit="10" cx="21.811" cy="10.306" r="2.945" />
+                            <circle clip-rule="evenodd" fill="none" stroke="currentColor" stroke-width="1.901" stroke-miterlimit="10" cx="31.601" cy="10.306" r="2.945" />
+                            <ellipse clip-rule="evenodd" fill="none" stroke="currentColor" stroke-width="1.901" stroke-miterlimit="10" cx="62.513" cy="42.122" rx="2.865" ry="2.911" />
+                            <ellipse clip-rule="evenodd" fill="none" stroke="currentColor" stroke-width="1.901" stroke-miterlimit="10" cx="62.513" cy="60.695" rx="2.865" ry="2.911" />
+                            <ellipse transform="rotate(6.486 62.5 51.43)" clip-rule="evenodd" fill="none" stroke="currentColor" stroke-width="1.901" stroke-miterlimit="10" cx="62.513" cy="51.425" rx="2.865" ry="2.911" />
+                            <path clip-rule="evenodd" fill="none" stroke="currentColor" stroke-width="2.852" stroke-miterlimit="10" d="M3.593 33.916H72.8M52.994 33.916V69.41" />
+                            <path clip-rule="evenodd" fill="none" stroke="currentColor" stroke-width="1.901" stroke-miterlimit="10" d="M12.97 42.156h30.675M12.97 25.994h50.64M12.97 51.425h30.675M12.97 60.695h30.675" />
+                        </svg>
+                        <p class="sub-title">Responsive Design</p>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie purus a felis condimentum molestie. Etiam a ullamcorper odio.</p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3 text-xs-center">
+                        <svg id="lock-icon" class="theme-stroke" xmlns="http://www.w3.org/2000/svg" width="75.334" height="71.333" viewBox="0 0 75.334 71.333">
+                            <g fill="none" stroke="currentColor" stroke-miterlimit="10">
+                                <path fill-rule="evenodd" clip-rule="evenodd" stroke-width="2.74" d="M17.425 31.945v15.05c0 11.18 9.062 20.242 20.242 20.242 11.18 0 20.242-9.063 20.242-20.243v-15.05H17.424z" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" stroke-width="2.74" d="M52.147 31.945V17.53c0-8-6.483-14.48-14.48-14.48-7.998 0-14.48 6.48-14.48 14.48v14.415h28.96z" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" stroke-width="2.74" d="M46.6 26.413v-8.896c0-4.934-4-8.934-8.933-8.934-4.934 0-8.934 4-8.934 8.934v8.896H46.6z" />
+                                <path stroke-width="1.827" d="M41.678 40.298h-8.023c-1.14 0-1.604.806-1.035 1.793l2.847 4.932c-1.315.762-2.202 2.18-2.202 3.81 0 2.428 1.97 4.398 4.4 4.398 2.43 0 4.4-1.97 4.4-4.4 0-1.627-.886-3.046-2.2-3.807l2.847-4.932c.57-.986.105-1.792-1.034-1.792z" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" stroke-width="1.827" d="M23.388 37.143V47.76c0 7.885 6.393 14.28 14.28 14.28" />
+                            </g>
+                        </svg>
+
+                        <p class="sub-title">Endless Security</p>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie purus a felis condimentum molestie. Etiam a ullamcorper odio.</p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3 text-xs-center">
+                        <svg id="features-icon" class="theme-stroke" xmlns="http://www.w3.org/2000/svg" width="75.334" height="71.333" viewBox="0 0 75.334 71.333">
+                            <path fill="none" stroke="currentColor" stroke-width="2.788" stroke-miterlimit="10" d="M72.667 40.498c0 1.533-1.254 2.788-2.788 2.788H5.454c-1.533 0-2.788-1.254-2.788-2.788V5.344c0-1.533 1.254-2.788 2.788-2.788H69.88c1.533 0 2.788 1.254 2.788 2.788v35.154z" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="currentColor" stroke-width="2.788" stroke-miterlimit="10" d="M2.667 47.467h70M37.667 48.053v16.45M37.25 47.636L15.24 69.642M37.667 47.636l22.008 22.006M2.667 35.698h10.196l11.353-11.355 7.112 7.112 16.057-16.057 10.13 10.128 5.777-5.777h9.375" />
+                        </svg>
+                        <p class="sub-title">Incredible features</p>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie purus a felis condimentum molestie. Etiam a ullamcorper odio.</p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3 text-xs-center">
+                        <svg id="idea-icon" class="theme-stroke" xmlns="http://www.w3.org/2000/svg" width="53.733" height="71.33" viewBox="0 0 53.733 71.33">
+                            <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="currentColor" stroke-width="2.788" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M20.986 60.045H32.75" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="currentColor" stroke-width="2.788" stroke-linecap="round" stroke-miterlimit="10" d="M22.293 63.06h9.15M20.475 30.78c1.963 3.54 3.073 6.42 3.693 9.53.614 3.076.742 6.375.746 10.787M28.82 51.097c.003-4.41.133-7.71.746-10.787.62-3.11 1.73-5.99 3.693-9.53M26.94 30.934c.327-.4.923-.464 1.327-.135l1.162.946c.507.413 1.19.088 2.01-.325l.053-.026c.525-.264 1.094-.55 1.752-.763M26.94 30.927c-.334-.41-.945-.475-1.358-.14l-1.19.97c-.52.423-1.217.09-2.057-.333l-.053-.028c-.537-.27-1.12-.563-1.793-.78" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="currentColor" stroke-width="2.788" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" d="M39.598 20.07c3.257 3.256 5.272 7.756 5.272 12.73 0 1.942-.313 3.82-.883 5.58-.593 1.82-1.472 3.517-2.58 5.03-1.856 2.54-3.363 4.208-4.534 5.505-2.106 2.328-3.028 3.35-3.028 6.756 0 .56-.455 1.014-1.013 1.014H20.986c-.56 0-1.012-.455-1.012-1.013 0-3.373-.943-4.402-3.035-6.695v-.002l-.004.002c-1.18-1.293-2.705-2.96-4.608-5.564-1.106-1.512-1.983-3.21-2.578-5.03-.573-1.758-.885-3.64-.885-5.58 0-2.433.487-4.76 1.368-6.885l.016-.04c.916-2.192 2.25-4.165 3.89-5.805 1.652-1.653 3.635-2.99 5.844-3.904v-.002c2.124-.88 4.452-1.366 6.885-1.366 2.428 0 4.752.485 6.88 1.366 2.206.914 4.195 2.252 5.848 3.905" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="currentColor" stroke-width="2.788" stroke-miterlimit="10" d="M15.727 24.855c.49-.72 1.04-1.39 1.644-1.996.6-.6 1.272-1.152 2-1.644.7-.472 1.465-.887 2.274-1.23.812-.344 1.667-.612 2.556-.79m-9.702 7.934c.34-.803.754-1.563 1.23-2.27" />
+                            <path fill="none" stroke="currentColor" stroke-width="2.788" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M26.867 7.025v2.767M15.102 8.74l.975 1.922.278.548M37.858 8.74l-.975 1.922-.278.548M45.85 16.567l-1.687 1.338-.48.382M7.142 16.567l1.688 1.338.482.382" />
+                        </svg>
+                        <p class="sub-title">Fresh ideas</p>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie purus a felis condimentum molestie. Etiam a ullamcorper odio.</p>
+                    </div>
+
+                    <div class="col-xs-12 text-center mr-t-50">
+                        <a class="btn-general btn-theme">Check services</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="laptop-slider section-padding">
+            <div class="container">
+                <div class="row flex-container-responsive">
+                    <div class="col-xs-12 col-md-5 flex-item text-xs-center">
+                        <p class="title mr-b-30 fontvariant-24">Lorem ipsum dolor sit amet</p>
+                        <p class="description mr-b-30 fontvariant-87">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie purus a felis condimentum molestie. Etiam a ullamcorper odio. Phasellus ipsum lorem, finibus semper sollicitudin ac, varius ut velit. Maecenas hendrerit ac ligula eu ultrices. </p>
+                        <a class="btn-general btn-theme">Show More</a>
+                    </div>
+                    <div class="col-xs-12 col-md-7 text-center flex-item">
+                        <!--<div class="scrollme">
+                            <img data-when="exit"
+                                 data-from="0.5"
+                                 data-to="0"
+                                 data-translatex="200"
+                                 data-easing="easeinout"
+                                 data-opacity="0"
+                                 class="animateme" src="images/laptop-slider.png" />
+                        </div>-->
+                        <div class="dt-laptop-slider">
+                            <div class="laptop-screen">
+                                <div class="laptop-image">
+                                    <img src="images/macbook.png" alt="" />
+                                    <div class="slider-image-container">
+                                        <div class="dummy">
+                                            <img class='app-shot' src="images/laptop-slider.png" alt="" />
+
+                                            <img class='app-shot' src="images/laptop-slider2.png" alt="" />
+
+                                            <img class='app-shot' src="images/laptop-slider.png" alt="" />
+
+                                            <img class='app-shot' src="images/laptop-slider2.png" />
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mobile-slider section-padding">
+            <div class="container">
+                <div class="row flex-container-responsive">
+                    <div class="col-xs-12 col-md-6 text-center flex-item">
+                        <div class="scrollme">
+                            <img src="images/mobile-slider.png" data-when="exit"
+                                 data-from="0.5"
+                                 data-to="0"
+                                 data-translatex="-200"
+                                 data-easing="easeinout"
+                                 data-opacity="0"
+                                 class="animateme" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-5 col-md-offset-1 flex-item text-xs-center">
+                        <p class="title mr-b-30 white-font">Lorem ipsum dolor sit amet</p>
+                        <p class="description mr-b-30 white-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie purus a felis condimentum molestie. Etiam a ullamcorper odio. Phasellus ipsum lorem, finibus semper sollicitudin ac, varius ut velit. Maecenas hendrerit ac ligula eu ultrices. </p>
+                        <a class="btn-general btn-white theme-font-color">Show More</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="artist">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-7 text-xs-center text-sm-center">
+                    <div class="section-padding">
+                        <h1 class="section-heading mr-b-60">
+                            Lorem ipsum
+                            dolor sit amet
+                        </h1>
+                        <p class="description mr-b-40 fontvariant-87">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie purus a felis condimentum molestie. Etiam a ullamcorper odio. Phasellus ipsum lorem, finibus semper sollicitudin ac, varius ut velit. Maecenas hendrerit ac ligula eu ultrices. </p>
+                        <a class="btn-general btn-theme">Show More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="office-pics">
+        <div class="first pic-bg">
+            <img src="images/office-pic-1.png" />
+            <div class="pic-description fullscreen-overlay">
+            </div>
+            <p class="heading">
+                Lorem ipsum
+                dolor sit amet
+            </p>
+        </div>
+        <div class="first pic-bg">
+            <img src="images/office-pic-2.png" />
+            <div class="pic-description active fullscreen-overlay">
+            </div>
+            <p class="heading">
+                Lorem ipsum
+                dolor sit amet
+            </p>
+        </div>
+        <div class="first pic-bg">
+            <img src="images/office-pic-3.png" />
+            <div class="pic-description fullscreen-overlay">
+            </div>
+            <p class="heading">
+                Lorem ipsum
+                dolor sit amet
+            </p>
+        </div>
+        <div class="first pic-bg">
+            <img src="images/office-pic-4.png" />
+            <div class="pic-description fullscreen-overlay">
+            </div>
+            <p class="heading">
+                Lorem ipsum
+                dolor sit amet
+            </p>
+        </div>
+    </section>
+
+    <section class="team section-padding">
+        <div class="container">
+            <div class="row scrollme">
+                <div class="col-xs-12 mr-b-40">
+                    <h1 class="section-heading text-xs-center">
+                        Check our<br />
+                        <span class="theme-font-color">awesome team</span>
+                    </h1>
+                </div>
+
+                <div class="col-xs-12 text-center col-sm-3 mr-b-40 animateme" data-when="enter" data-scale="2" data-from="1" data-to="0" data-opacity="0">
+                    <img src="images/member-1.png" />
+                    <p class="title mr-t-20 mr-b-0">John Doe</p>
+                    <p class="description mr-b-20">Ceo & Founder</p>
+                    <a class="btn-general btn-theme">Check Profile</a>
+                </div>
+
+                <div class="col-xs-12 text-center col-sm-3 mr-b-40 animateme" data-when="enter" data-scale="0" data-from="1" data-to="0" data-opacity="0">
+                    <img src="images/member-2.png" />
+                    <p class="title mr-t-20 mr-b-0">John Doe</p>
+                    <p class="description mr-b-20">Ceo & Founder</p>
+                    <a class="btn-general btn-theme">Check Profile</a>
+                </div>
+
+                <div class="col-xs-12 text-center col-sm-3 mr-b-40 animateme" data-when="enter" data-scale="2" data-from="1" data-to="0" data-opacity="0">
+                    <img src="images/member-3.png" />
+                    <p class="title mr-t-20 mr-b-0">John Doe</p>
+                    <p class="description mr-b-20">Ceo & Founder</p>
+                    <a class="btn-general btn-theme">Check Profile</a>
+                </div>
+
+                <div class="col-xs-12 text-center col-sm-3 mr-b-40 animateme" data-when="enter" data-scale="0" data-from="1" data-to="0" data-opacity="0">
+                    <img src="images/member-4.png" />
+                    <p class="title mr-t-20 mr-b-0">John Doe</p>
+                    <p class="description mr-b-20">Ceo & Founder</p>
+                    <a class="btn-general btn-theme">Check Profile</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contact section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-xs-center text-sm-center col-md-6">
+                    <h1 class="section-heading mr-b-40 white-font">
+                        Contact With Us
+                    </h1>
+                    <p class="description-lg fontvariant-87 mr-b-20">Marszalkowska Street 14/35 / Mazowieckie, Poland </p>
+                    <p class="sub-title fontvariant-87">Phone: <span class="theme-font-color">(+48) 604 234 091</span></p>
+                    <p class="sub-title fontvariant-87">
+                        E-mail:
+                        <span class="theme-font-color">
+                            contact@austera.co
+                        </span>
+                    </p>
+                    <div class="social-links mr-t-30">
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-youtube"></i>
+                        <i class="fa fa-pinterest"></i>
+                        <i class="fa fa-google-plus"></i>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-6 text-center">
+                    <input type="text" placeholder="Your Name" class="contact-input" />
+                    <input type="text" placeholder="Your e-mail address" class="contact-input" />
+                    <textarea placeholder="Your Message" rows="4" class="contact-input"></textarea>
+                    <a class="btn-general btn-theme">Send Message</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6 text-xs-center text-sm-center mr-xs-b-20 mr-sm-b-20">
+                    <a class="footer-iinks" href="#">Homepage</a>
+                    <a class="footer-iinks" href="#">Services</a>
+                    <a class="footer-iinks" href="#">About Us</a>
+                    <a class="footer-iinks" href="#">Contact</a>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <p class="copyright text-xs-center text-sm-center text-right">
+                        Copyright ⓒ 2015. All rights reserved by MountTec
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts/vivus/vivus.js"></script>
+    <script src="scripts/vivus/pathformer.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            //var icon1 = new Vivus('icon1', { type: 'scenario-sync', duration: 20, forceRender: false });
+            var designIcon = new Vivus('design-icon', { type: 'scenario-sync', duration: 20, forceRender: false });
+            var lockIcon = new Vivus('lock-icon', { type: 'scenario-sync', duration: 20, forceRender: false });
+            var featuresIcon = new Vivus('features-icon', { type: 'scenario-sync', duration: 20, forceRender: false });
+            var ideaIcon = new Vivus('idea-icon', { type: 'scenario-sync', duration: 20, forceRender: false });
+
+
+            $('.search-icon').click(function (event) {
+                event.stopPropagation();
+                $('.header-search').slideDown();
+                $('.header-search input').focus();
+            });
+            $('.header-search input').click(function (event) {
+                event.stopPropagation();
+            });
+            $('.close-search').click(function () {
+                $('.header-search').slideUp();
+            });
+        });
+        $(document).on("click", function () {
+            $('.header-search').slideUp();
+        });
+    </script>
+
+</body>
+</html>

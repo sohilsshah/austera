@@ -1,0 +1,74 @@
+﻿.background-variation, .heading, .sub-heading, .title, .description {
+    @include transition(all,0.5s);
+    transition-timing-function: ease-out;
+}
+
+@mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value) {
+    @each $property in $properties {
+        #{$property}: $min-value;
+    }
+
+    @media screen and (min-width: $min-vw) {
+        @each $property in $properties {
+            #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * (100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)});
+        }
+    }
+
+    @media screen and (min-width: $max-vw) {
+        @each $property in $properties {
+            #{$property}: $max-value;
+        }
+    }
+}
+
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+}
+
+
+
+.banner-heading {
+    @include fluid-type(font-size, 320px, 1920px, 24px, 30px);
+}
+
+.banner-sub-heading {
+    @include fluid-type(font-size, 320px, 1920px, 13px, 20px);
+}
+
+.banner-description {
+    @include fluid-type(font-size, 320px, 1920px, 14px, 20px);
+}
+
+.section-heading {
+    @include fluid-type(font-size, 320px, 1920px, 28px, 68px);
+    margin-top: 0;
+}
+
+.section-sub-heading {
+    @include fluid-type(font-size, 320px, 1920px, 18px, 32px);
+    margin-top: 0;
+}
+
+.heading {
+    @include fluid-type(font-size, 320px, 1920px, 20px, 48px);
+}
+
+.sub-heading {
+    @include fluid-type(font-size, 320px, 1920px, 14px, 22px);
+}
+
+.title {
+    @include fluid-type(font-size, 320px, 1920px, 16px, 32px);
+}
+
+.sub-title {
+    @include fluid-type(font-size, 320px, 1920px, 14px, 24px);
+}
+
+.description {
+    @include fluid-type(font-size, 320px, 1920px, 12px, 13px);
+}
+
+.description-lg {
+    @include fluid-type(font-size, 320px, 1920px, 14px, 18px);
+}

@@ -1,0 +1,39 @@
+﻿.white-font-color {
+    color: white;
+}
+
+.white-bg-color {
+    background-color: white;
+}
+
+.white-border-color {
+    border-color: white;
+}
+/*in white hover variables*/
+.hover-white-border {
+    &:hover {
+        border-color: white;
+    }
+}
+
+.hover-white-font-color {
+    &:hover {
+        color: white !important;
+    }
+}
+
+.hover-white-bg-color {
+    &:hover {
+        background-color: white !important;
+    }
+}
+/*in active variables*/
+.active {
+    .active-white-font-color {
+        color: white !important;
+    }
+}
+
+.active.white-bg-color {
+    background-color: white !important;
+}

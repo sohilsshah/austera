@@ -1,0 +1,38 @@
+﻿/*variables for dark background color theme*/
+$dark-primary-bg-color: #1e2123;
+$dark-secondary-bg-color: #25292b;
+
+/*variables for white background color theme*/
+$light-primary-bg-color: #fafafa;
+$light-secondary-bg-color: #e9e9e9;
+
+/*primary & secondary color variable*/
+:root {
+    --primary-color:pink;
+    --secondary-color:green;
+}
+
+/*list of theme colors to apply*/
+$theme-color-list: (color-orange #e05a53, color-yellow #f08903, color-red #E12726, color-pink #e074a4,color-violet #692e98,color-green #00BB9C,color-blue #3baeda, color-cream #d3a478,color-maroon #731c47);
+
+/*font variables*/
+$font-family-list: (font-opensans 'Open Sans',font-montserrat 'Montserrat',font-raleway 'ralewayregular');
+$font-color: ( white-font #fff, black-font #000, fontvariant-24 #242424, fontvariant-87 #878787);
+$font-size: (font-10 10px, font-12 12px,font-14 14px, font-16 16px,font-18 18px, font-20 20px,font-22 22px, font-24 24px,font-28 28px,font-34 34px,font-36 36px,font-42 42px, font-48 48px,font-50 50px,font-72 72px,font-80 80px);
+
+@each $color in $theme-color-list {
+    html.#{nth($color,1)} {
+        body {
+            --theme-color: nth($color,2);
+        }
+    }
+}
+
+@each $font-family in $font-family-list {
+    /*apply default font-family input body*/
+    html.#{nth($font-family,1)} {
+        body {
+            --primary-font: nth($font-family,2);
+        }
+    }
+}
