@@ -1,0 +1,72 @@
+﻿@for $i from 10 through 100 {
+    .max-$i {
+        max-width: $i * 1%;
+    }
+}
+
+@for $i from 1 through 10 {
+    .border-#{$i} {
+        border-width: $i * 1px;
+    }
+}
+
+@for $i from 1 through 10 {
+    .opacity-#{$i} {
+        opacity: $i/10;
+    }
+}
+
+.ds-block {
+    display: block;
+}
+
+.ds-inline-block {
+    display: inline-block;
+}
+
+.ps-relative {
+    position: relative;
+}
+
+.ps-absolute {
+    position: absolute;
+}
+
+
+.fullscreen-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.flex-container-responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.flex-item {
+    float: none;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+@media all and (min-width:320px) and (max-width:767px) {
+    .flex-container-responsive {
+        flex-direction: column;
+    }
+}

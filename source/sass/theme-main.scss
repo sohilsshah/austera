@@ -1,0 +1,51 @@
+﻿/*variables*/
+@import "partials/_variables.scss";
+@import "partials/_paths.scss";
+
+/*frameworks*/
+@import "bootstrap-sass-3.3.7/assets/stylesheets/_bootstrap.scss";
+@import "font-awesome-4.6.3/scss/font-awesome.scss";
+
+/*normalize and reset*/
+@import "normalize";
+@import "custom-reset.scss";
+
+/*customized general*/
+@import "spacing.scss";
+@import "cross-browser-mixin";
+
+
+/*cms*/
+/*@import "dark-light-variant.scss";*/
+@import "color-variation/primary-color-classes.scss";
+@import "color-variation/secondary-color-classes.scss";
+@import "color-variation/theme-color-classes.scss";
+
+/*fonts*/
+@import "font-specific/font-face.scss";
+@import "font-specific/font-classes.scss";
+
+/*components*/
+@import "components/button";
+@import "components/typography.scss";
+@import "components/selection-highlight";
+@import "components/placeholder";
+
+/*theme customizer*/
+@import "theme-customizer.scss";
+
+/*framework-override*/
+@import "bootstrap-override";
+
+/*customized common*/
+@import "common.scss";
+@import "project-specific";
+
+/*page vise*/
+@import "austera-home.scss";
+
+
+
+
+
+

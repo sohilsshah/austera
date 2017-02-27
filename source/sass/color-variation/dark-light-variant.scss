@@ -1,0 +1,202 @@
+﻿
+@function text-contrast($text-color) {
+    @if(lightness($text-color) < 50%) {
+        @return lighten($text-color,80%);
+    }
+    @else {
+        @return darken($text-color,80%);
+    }
+}
+
+@mixin background-varibles($primary-color,$secondary-color) {
+    color: text-contrast($primary-color);
+
+    .border-contrast {
+        border-color: text-contrast($primary-color);
+    }
+    /*in primary variables*/
+    .primary-font-color {
+        color: $primary-color;
+    }
+
+    .primary-bg-color {
+        color: text-contrast($primary-color);
+        background-color: $primary-color;
+    }
+
+    .primary-border-color {
+        border-color: $primary-color;
+    }
+    /*in secondary variables*/
+    .secondary-font-color {
+        color: $secondary-color;
+    }
+
+    .secondary-bg-color {
+        color: text-contrast($secondary-color);
+        background-color: $secondary-color;
+    }
+
+    .secondary-border-color {
+        border-color: $secondary-color;
+    }
+    /*in static colors*/
+    .hover-white-bg-color {
+        &:hover {
+            background-color: #fff !important;
+        }
+    }
+    /*in transparent state*/
+    .transparent-bg-color {
+        background-color: rgba($primary-color,0.9);
+    }
+
+    section.background-variation.odd-variant {
+        background-color: rgba($primary-color,1);
+
+        @if($primary-color == #1e2123) { // if the theme is dark, then fonts in primary(#000) background will be following
+            .heading {
+                color: #fff;
+            }
+
+            .sub-heading {
+                color: #aaa9a9;
+            }
+
+            .title {
+                color: #6c777b;
+            }
+
+            .description {
+                color: #999999;
+            }
+
+            .secondary-contrast-bg {
+                background-color: #25292b;
+
+                .title {
+                    color: #f2f2f2;
+                }
+
+                .description {
+                    color: #aaa9a9;
+                }
+            }
+        }
+
+        @else { // if the theme is light, then fonts in primary(#fff) background will be following
+            .heading {
+                color: #333;
+            }
+
+            .sub-heading {
+                color: #aaa9a9;
+            }
+
+            .title {
+                color: #6c777b;
+            }
+
+            .description {
+                color: #999999;
+            }
+
+            .secondary-contrast-bg {
+                background-color: #e9e9e9;
+
+                .title {
+                    color: #6c777b;
+                }
+
+                .description {
+                    color: #aaa9a9;
+                }
+            }
+        }
+    }
+
+    section.background-variation.even-variant {
+        background-color: $secondary-color;
+
+        @if($secondary-color == #25292b) { // if the theme is dark, then fonts in secondary(#777) background will be following
+            .heading {
+                color: #fff;
+            }
+
+            .sub-heading {
+                color: #aaa9a9;
+            }
+
+            .title {
+                color: #fff;
+            }
+
+            .description {
+                color: #aaa9a9;
+            }
+
+            .secondary-contrast-bg {
+                background-color: #1e2123;
+
+                .title {
+                    color: #f2f2f2;
+                }
+
+                .description {
+                    color: #aaa9a9;
+                }
+            }
+        }
+
+        @else { // if the theme is light, then fonts in secondary(#eaeaea) background will be following
+            .heading {
+                color: #333;
+            }
+
+            .sub-heading {
+                color: #aaa9a9;
+            }
+
+            .title {
+                color: #1e2123;
+            }
+
+            .description {
+                color: #aaa9a9;
+            }
+
+            .secondary-contrast-bg {
+                background-color: #fafafa;
+
+                .title {
+                    color: #1e2123;
+                }
+
+                .description {
+                    color: #aaa9a9;
+                }
+            }
+        }
+    }
+
+    @if($primary-color == #1e2123) {
+        .contrast-bg-color {
+            /*background-color: lighten($primary-color,70%);*/
+            background-color: #575757;
+        }
+    }
+    @else {
+        .contrast-bg-color {
+            background-color: darken($primary-color,70%);
+        }
+    }
+}
+
+
+body.light {
+    @include background-varibles($light-primary-bg-color,$light-secondary-bg-color);
+}
+
+body.dark {
+    @include background-varibles($dark-primary-bg-color,$dark-secondary-bg-color);
+}
